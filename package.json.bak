@@ -4,6 +4,7 @@
   "description": "",
   "main": "server..js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/dominik377/pingServer/issues"
   },
-  "homepage": "https://github.com/dominik377/pingServer#readme"
+  "homepage": "https://github.com/dominik377/pingServer#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
 }
