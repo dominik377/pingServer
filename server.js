@@ -15,6 +15,9 @@ var corsOptions = {
 }
 app.use(cors(corsOptions));
 
+app.get('/', (req, res) => {
+  res.send('Welcome to my Node.js app');
+});
 
 // simple ping - pong
 app.get('/api/ping', (req, res) => {
