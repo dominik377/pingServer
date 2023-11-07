@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 
+console.log('test log message')
+
 const app = express();
 
 var corsOptions = {
