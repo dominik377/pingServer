@@ -1,7 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 
-console.log('test log message')
+
+// repeatedly log every 2 minutes a test message to console
+setInterval(() => {
+  console.log('test');
+}, 120000);
 
 const app = express();
 
