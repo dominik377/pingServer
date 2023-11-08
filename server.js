@@ -37,4 +37,4 @@ app.get('/api/ping', (req, res) => {
   res.json({ message: 'pong' });
 });
 
-app.listen(process.env.PORT);
+app.listen(3000);
