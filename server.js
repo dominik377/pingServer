@@ -37,4 +37,4 @@ app.get('/api/ping', (req, res) => {
   res.json({ message: 'pong' });
 });
 
-app.listen(80, () => console.log('Server running on port 80'));
+app.listen(3000, () => console.log('Server running on port 3000'));
