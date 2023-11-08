@@ -1,9 +1,20 @@
 const express = require('express');
 const cors = require('cors');
 
+const fs = require('fs');
+const path = require('path');
+
+function logMessage(message) {
+  const logPath = path.join(__dirname, 'log.txt');
+  fs.appendFileSync(logPath, ` ${message}\n`, 'utf8');
+}
+
+
+logMessage('Starting server');
 
 // repeatedly log every 2 minutes a test message to console
 setInterval(() => {
+  logMessage('test');
   console.log('test');
   console.info('test info');
   console.error('test error');
